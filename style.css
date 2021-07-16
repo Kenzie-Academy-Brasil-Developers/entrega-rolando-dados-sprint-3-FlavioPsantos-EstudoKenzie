@@ -1,0 +1,77 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    
+    div.dado figure img {
+        width: 180px;
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        transition: width 2s, height 2s, transform 2s;
+    }
+    
+    div.dado figure img:hover {
+        width: 100px;
+        height: 100px;
+        transform: rotate(360deg);
+    }
+    
+    table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 40%;
+        background-color: lightgreen;
+        justify-content: flex-end;
+        position: fixed;
+        opacity: 50%;
+    }
+    
+    table tr {
+        width: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    @media ( min-width: 600px) {
+        div.dado figure img {
+            width: 200px;
+            cursor: pointer;
+            width: 150px;
+            height: 150px;
+            transition: width 2s, height 2s, transform 2s;
+        }
+        div.dado figure img:hover {
+            width: 300px;
+            height: 300px;
+            transform: rotate(180deg);
+        }
+        table {
+            width: 500px;
+            height: 60%;
+        }
+    }
+    
+    @media ( min-width: 800px) {
+        div.dado figure img {
+            width: 200px;
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+            transition: width 2s, height 2s, transform 2s;
+        }
+        div.dado figure img:hover {
+            width: 280px;
+            height: 280px;
+            transform: rotate(180deg);
+        }
+        table {
+            width: 100%;
+            height: 70%;
+        }
+    }
