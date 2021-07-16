@@ -1,7 +1,5 @@
 const body = document.querySelector("body");
 const elementoTable = document.createElement("table");
-
-
 body.appendChild(elementoTable)
 let valorDosDados = [];
 let valorSomaDado = 0;
@@ -11,6 +9,7 @@ let item = 0;
 const count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 function jogaDado() {
+    elementoTable.innerHTML = "";
     let valorPrimeiroDado = 0;
     let valorSegundoDado = 0;
     for (let i = 0; i < 1000; i++) {
